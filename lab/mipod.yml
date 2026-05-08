@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mipod
+  labels:
+    app: dev
+spec:
+  containers: 
+  - name: mipod
+    image: nginx
+    ports: 
+    - containerPort: 80
+    imagePullPolicy: IfNotPresent
